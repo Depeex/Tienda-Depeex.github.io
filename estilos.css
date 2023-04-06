@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppings', sans-serif;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+
+.header {
+    display:flex;
+    position: relative;
+}
+
+
+.Logodpx {
+    width: 250px;
+    position: relative;
+    left: 125px;
+    top: 5px;
+}
+
+.Menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.Logo {
+    color: #303030;
+    font-size: 35px;
+    font-weight: 700 ;
+
+}
+
+.Menu .navbar ul li {
+    position: relative;
+    float:left;
+
+}
+
+.Menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #303030;
+    display: block;
+    font-weight: 500;
+}
+
+#Menu {
+    display: none;
+}
+
+.Menu-icono {
+    width: 25px;
+
+}
+
+.Menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.bg {
+    position: absolute;
+    width: 700px;
+    z-index: -1;
+    right: 0;
+}
+
+.Header-info {
+    display:flex;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.Header-txt {
+    width: 50%;
+    padding-right: 35px;
+
+}
+
+.Header-txt h1{
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 700;
+    color:#303030;
+    margin-bottom: 25px ;
+    text-transform: capitalize;
+
+}
+
+.Header-txt p {
+    font-size: 16px;
+    color: #545454;
+    margin-bottom: 35px;
+
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: #ff9f0d;
+    padding: 30px 30px;
+    border-radius: 25px;
+    color: white;
+    text-transform: capitalize;
+    box-shadow: 0 0 20px rgba(0,0,0,0.52)
+
+}
+
+.btn-1:hover {
+    background-color: #ee9003;
+
+}
+
+.Header-Img {
+    width: 50%;
+}
+
+.Header-Img Img {
+    width: 750px;
+}
+
+.Info {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Info-1 {
+    width: 300px;
+    padding: 15px 25px;
+    box-shadow: 0 0 20px rgba(0,0, 0, 0.1) ;
+    border-radius: 20px; ;
+    text-align: center;
+}
+
+.Info-1 img{
+    width: 35px;
+
+}
+
+.Info-1 h3 {
+    font-size: 18px;
+    color: #303030;
+    margin-bottom: 10px ;
+}
+
+.Info-1 p{
+    font-size: 16px;
+    color: #545454;
+
+}
+
+.Nosotros {
+    position: relative;
+
+}
+
+.bg-2 {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    z-index: -1;
+}
+
+.Nosotros-info {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.Nosotros-img {
+    width: 50%;
+
+}
+
+.Nosotros-img img{
+    width: 650px;
+    
+
+}
+
+.Nosotros-txt {
+    width: 50%;
+
+}
+
+.Nosotros-txt span {
+    font-size: 16px;
+    color:#ff9f0d;
+    font-weight: 700;
+    margin-bottom: 25px;
+
+}
+
+.Nosotros-txt h2{
+    font-size: 45px;
+    color:#303030;
+    margin-bottom: 30px;
+}
+
+.Nosotros-txt p{
+    font-size: 18px;
+    color: #545454;
+    margin-bottom: 50px ;
+
+}
+
+.Productos {
+    padding: 80px 0;
+    text-align: center;
+
+}
+
+.Productos h2{
+    font-size: 45px;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+.Productos p{
+    font-size: 18px;
+    color: #545454;
+    margin-bottom: 70px;
+    padding: 0 200px;
+}
+
+.Producto-info {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto ;
+    grid-gap: 3rem;
+}
+
+.Producto {
+    padding-bottom: 35px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0, 0, 0.1);
+    border-radius: 25px;
+
+}
+
+.Producto:hover {
+    transform:translateY(-15px);
+}
+
+.Producto img {
+    width: 100%;
+    height: 250px;
+    border-radius: 25px 25px 0 0;
+}
+
+.Producto h3{
+    font-size: 20px;
+    color: #303030;
+    margin-top: 15px;
+
+}
+
+.Producto p{
+    font-size: 16px;
+    padding: 30px;
+    color: #545454;
+    margin: 0;
+}
+
+.Producto span {
+    background-color: #ff9f0d;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+hr {
+    border: 1px solid #EEE;
+
+}
+
+#Contacto {
+    background-color: #ff9900 ;
+}
+
+.Footer {
+    padding: 100px 0;
+}
+
+.Footer-links {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Links h3{
+    font-size: 20px;
+    color: #303030;
+    margin-bottom: 20px;
+}
+
+.Links ul li a{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    color: #545454;
+}
+
+@media(max-width: 991px) {
+    .Menu {
+        padding: 30px;
+    }
+
+    .Logodpx {
+        display: none;
+    }
+
+    .Menu label {
+        display: initial;
+    }
+
+    .Menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        right: 0px;
+        background-color: #303030;
+        display: none ;
+    }
+
+    .Menu .navbar ul li {
+        width: 100%;
+    }
+
+    .Menu .navbar ul li a{
+        color: #ffffff;
+
+    }
+
+    .Menu .navbar ul li a:hover {
+        color: #bebebe;
+
+    }
+
+    #Menu:checked ~ .navbar {
+        display:initial;
+    }
+
+    .bg {
+        width: 500px;
+
+    }
+
+    .Header-info {
+       flex-direction: column;
+       padding: 30px; 
+    }
+
+    .Header-txt{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+
+    }
+
+    .Header-txt h1{
+        font-size: 40px;
+        line-height: 50px;
+
+    }
+
+    .Header-Img {
+        width: 100%;
+        text-align: center;
+        padding-top: 35px;
+
+    }
+
+    .Header-Img img{
+        width: 300px;
+    }
+
+    .Info {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .Info-1 {
+        margin-bottom: 20px ;
+
+    }
+
+    .Nosotros {
+        padding: 30px;
+
+    }
+
+    .bg-2 {
+        top: 80px;
+        width: 200px;
+
+    }
+
+    .Nosotros-info {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .Nosotros-img {
+        width: 100%;
+
+    }
+
+    .Nosotros-img img{
+        width: 300px; 
+
+    }
+
+    .Nosotros-txt {
+        width: 100%;
+
+    }
+
+    .Nosotros-txt h2 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
+
+    }
+
+    .Nosotros-txt p{
+        margin-bottom: 20px;
+    }
+
+    .Nosotros-txt span{
+        color: #303030;
+    }
+
+    .Productos {
+        padding: 30px;
+        text-align: center;
+
+    }
+    .Productos h2{
+        font-size: 40px;
+
+    }
+
+    .Productos p{
+        padding: 0px;
+        margin-bottom: 40px;
+
+    }
+
+    .Producto-info {
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .Producto p {
+        padding: 30px;
+
+    }
+
+    .Footer {
+        padding: 30px;
+
+    }
+
+    .Footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Socials {
+        margin-bottom: 25px;
+
+    }
+
+    
+    
+
+}
+
+
+.Yt {
+    width: 31px;
+}
+
+.Tiktok {
+    width: 23px;
+}
+
+
+

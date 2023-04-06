@@ -1,0 +1,1 @@
+Mi primer tienda ficticia basada en Depeex, mi marca personal
